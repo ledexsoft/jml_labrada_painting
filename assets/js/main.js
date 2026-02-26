@@ -143,7 +143,9 @@ document.querySelectorAll('[data-r]').forEach(el => io.observe(el));
 ══════════════════════════════ */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
-    const t = document.querySelector(a.getAttribute('href'));
+    const href = a.getAttribute('href');
+    if (!href || href === '#') return;
+    const t = document.querySelector(href);
     if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
   });
 });
@@ -157,7 +159,6 @@ function submitForm(e) {
   const span = btn.querySelector('.f-btn-text');
   span.textContent = 'Enviado con éxito ✓';
   btn.style.pointerEvents = 'none';
-  btn.querySelector('::before');
   setTimeout(() => {
     span.textContent = 'Enviar solicitud →';
     btn.style.pointerEvents = '';
