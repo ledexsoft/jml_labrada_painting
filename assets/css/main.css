@@ -78,8 +78,9 @@ input,select,textarea{
 .form-note{min-height:1.3rem;color:var(--accent-2);font-size:.88rem;margin:0}
 .footer{width:min(var(--max),92vw);margin:0 auto;padding:1.2rem 0 2rem;display:flex;justify-content:space-between;gap:1rem;color:var(--muted);font-size:.9rem}
 
-.reveal{opacity:0;transform:translateY(24px);transition:all .7s ease}
-.reveal.is-visible{opacity:1;transform:none}
+.reveal{opacity:1;transform:none;transition:all .7s ease}
+.js .reveal{opacity:0;transform:translateY(24px)}
+.js .reveal.is-visible{opacity:1;transform:none}
 
 @media (max-width:1024px){
   .nav{display:none}
