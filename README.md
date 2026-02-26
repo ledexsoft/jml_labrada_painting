@@ -1,8 +1,9 @@
-# jml_labrada_painting
+# JM Labrada Painting Site
+
+Landing page principal para captación de clientes en Tampa.
 
 ## Estructura
-
-- `index.html`: única página principal del sitio.
-- `assets/css/main.css`: estilos globales del sitio.
-- `assets/js/main.js`: interacciones y lógica de frontend.
-- `assets/images/`: carpeta para imágenes y recursos visuales.
+- `index.html`: página principal única.
+- `assets/css/main.css`: estilos visuales y responsive.
+- `assets/js/main.js`: animaciones suaves, scroll y comportamiento del formulario.
+- `assets/images/`: carpeta reservada para imágenes.
