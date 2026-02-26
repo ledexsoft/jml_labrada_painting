@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JM Labrada Painting | Pintura residencial y comercial en Tampa</title>
+  <meta name="description" content="JM Labrada Painting ayuda a propietarios y negocios en Tampa a renovar sus espacios sin retrasos, malos acabados ni sobrecostos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+<body>
+  <noscript><div style="padding:.75rem 1rem;background:#ff8a3d;color:#111;font:600 14px/1.4 Inter,Arial,sans-serif;">Activa JavaScript para ver animaciones y formulario interactivo.</div></noscript>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a href="#home" class="logo">JM <span>Labrada Painting</span></a>
+    <nav class="nav">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#contacto" class="btn btn-sm">Cotiza hoy</a>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <p class="kicker reveal">Tampa, Florida · Pintura premium</p>
+      <h1 class="reveal">Acabados impecables para hogares y negocios que <em>no pueden parar.</em></h1>
+      <p class="lead reveal">¿Te preocupa contratar y terminar con paredes manchadas, tiempos incumplidos o costos que suben sin aviso? En <strong>JM Labrada Painting</strong> trabajamos con planificación, protección total del espacio y entregas puntuales para que tu propiedad luzca profesional desde el primer día.</p>
+      <div class="hero-cta reveal">
+        <a href="#contacto" class="btn">Solicitar estimado gratis</a>
+        <a href="#servicios" class="link">Ver soluciones →</a>
+      </div>
+      <ul class="hero-metrics reveal">
+        <li><strong>+180</strong><span>proyectos completados</span></li>
+        <li><strong>48h</strong><span>respuesta a estimados</span></li>
+        <li><strong>5★</strong><span>clientes satisfechos en Tampa</span></li>
+      </ul>
+    </section>
+
+    <section class="section pain-grid" id="servicios">
+      <article class="card reveal">
+        <p class="tag">Dolor #1</p>
+        <h2>Contratistas que no cumplen tiempos</h2>
+        <p>Definimos calendario por fases, con avances diarios y fecha de entrega clara para evitar atrasos que te cuestan dinero.</p>
+      </article>
+      <article class="card reveal">
+        <p class="tag">Dolor #2</p>
+        <h2>Acabados irregulares y retoques eternos</h2>
+        <p>Aplicamos sistemas de preparación y control de calidad por superficie para lograr uniformidad y durabilidad real.</p>
+      </article>
+      <article class="card reveal">
+        <p class="tag">Dolor #3</p>
+        <h2>Desorden en tu propiedad durante la obra</h2>
+        <p>Protección completa de pisos, muebles y zonas sensibles. Entregamos limpio y listo para usar.</p>
+      </article>
+    </section>
+
+    <section class="section split" id="proceso">
+      <div class="split-head reveal">
+        <p class="kicker">Método JM</p>
+        <h2>Rediseñamos tu espacio sin fricción.</h2>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><span>01</span><div><h3>Diagnóstico en sitio</h3><p>Inspección técnica y detección de humedad, grietas o desgaste.</p></div></li>
+        <li class="reveal"><span>02</span><div><h3>Propuesta transparente</h3><p>Alcance, materiales y presupuesto detallado sin letras pequeñas.</p></div></li>
+        <li class="reveal"><span>03</span><div><h3>Ejecución profesional</h3><p>Equipo capacitado, supervisión continua y comunicación constante.</p></div></li>
+        <li class="reveal"><span>04</span><div><h3>Entrega con garantía</h3><p>Revisión final contigo y garantía por escrito en acabados.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section testimonials" id="testimonios">
+      <div class="quote reveal">
+        “Nos habían quedado mal dos veces con otros pintores. JM Labrada Painting sí cumplió: rápido, limpio y con un acabado de nivel comercial.”
+      </div>
+      <div class="author reveal">— Carla M., administradora de propiedad en Tampa</div>
+    </section>
+
+    <section class="section cta" id="contacto">
+      <div class="cta-copy reveal">
+        <p class="kicker">Captación activa</p>
+        <h2>Agenda tu estimado y recibe un plan de pintura accionable en menos de 48 horas.</h2>
+        <p>Ideal para propietarios, realtors, HOAs y negocios que necesitan mejorar imagen sin interrumpir su operación.</p>
+      </div>
+      <form class="form reveal" id="lead-form">
+        <label>Nombre completo<input type="text" name="nombre" required></label>
+        <label>Teléfono<input type="tel" name="telefono" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Tipo de proyecto
+          <select name="tipo" required>
+            <option value="">Selecciona</option>
+            <option>Residencial interior</option>
+            <option>Residencial exterior</option>
+            <option>Comercial</option>
+            <option>Repintado por venta/renta</option>
+          </select>
+        </label>
+        <label>¿Qué problema necesitas resolver?
+          <textarea name="mensaje" rows="4" placeholder="Ej: necesito entregar una propiedad en 2 semanas"></textarea>
+        </label>
+        <button class="btn" type="submit" id="submit-btn">Quiero mi estimado</button>
+        <p class="form-note" id="form-note" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 JM Labrada Painting · Tampa, Florida</p>
+    <a href="#home">Volver arriba ↑</a>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
